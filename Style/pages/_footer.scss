@@ -1,0 +1,34 @@
+footer {
+    background-color: $grey2;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        color: white;
+    }
+
+    .footer-container {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        a {
+            img {
+                width: 138px;
+            }
+        }
+
+        .links {
+            @include flexColumnFooter;
+
+            .important-links {
+                @include flexColumnFooter;
+            }
+
+            .legal-links {
+                @include flexColumnFooter;
+            }
+        }
+    }
+}
