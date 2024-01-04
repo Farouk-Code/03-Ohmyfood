@@ -255,8 +255,6 @@ header .explore button:hover {
 }
 .restaurants-container .restaurants .cards-list .link-card .fav-card .checkbox-fav:checked + label .regular-heart {
   display: none;
-  -webkit-transform: translateX(100);
-          transform: translateX(100);
 }
 .restaurants-container .restaurants .cards-list .link-card .fav-card label .solid-heart {
   display: none;
@@ -323,88 +321,4 @@ footer .footer-container .links .legal-links {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
-}
-
-.main-container {
-  position: relative;
-}
-.main-container .loader-container {
-  background-color: #fff;
-  min-height: 100vh;
-  width: 100%;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 1;
-  -webkit-animation: vanishing 3s forwards;
-          animation: vanishing 3s forwards;
-}
-@-webkit-keyframes vanishing {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  80% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-@keyframes vanishing {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  80% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-.main-container .loader-container .loader {
-  border: 16px solid #F6F6F6;
-  border-top: 16px solid #9356DC;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
-  margin: auto;
-}
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }/*# sourceMappingURL=style.css.map */
