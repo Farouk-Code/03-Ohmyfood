@@ -12,6 +12,12 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 16px;
+        @media (min-width: 1019px) {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 100px;
+            margin-right: 100px;
+        }
 
         a {
             img {
@@ -21,13 +27,25 @@ footer {
 
         .links {
             @include flexColumnFooter;
+            @media (min-width: 1019px) {
+                @include flexRowFooter;
+                gap: 50px;
+            }
 
             .important-links {
                 @include flexColumnFooter;
+                @media (min-width: 1019px) {
+                    @include flexRowFooter;
+                    gap: 30px;
+                }
             }
 
             .legal-links {
                 @include flexColumnFooter;
+                @media (min-width: 769px) {
+                    @include flexRowFooter;
+                    gap: 30px;
+                }
             }
         }
     }

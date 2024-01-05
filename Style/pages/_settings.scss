@@ -37,6 +37,11 @@ $grey2: #353535;
     gap: 10px; 
 }
 
+@mixin flexRowFooter {
+    display: flex;
+    flex-direction: row;
+}
+
 * {
     margin: 0;
     padding: 0;

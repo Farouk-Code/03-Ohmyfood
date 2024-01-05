@@ -6,16 +6,36 @@
     .restaurants {
         margin: 0 auto;
         padding-top: 50px;
-        width: 90%;
+
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            width: 95%;
+        }
+
+        @media (min-width: 1025px) {
+             width: 960px;
+        }
 
         .cards-list {
             margin-top: 30px;
             @include centerFlexColumn;
             gap: 18px;
+            @media (min-width: 769px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 50px;
+                column-gap: 100px;
+            }
 
             .link-card {
                 width: 100%;
                 max-width: 340px;
+                @media (min-width: 769px) {
+                    max-width: 100%;
+                }
                 height: 251px;
                 background-color: white;
                 border-radius: 20px;
