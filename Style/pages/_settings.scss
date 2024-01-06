@@ -42,6 +42,19 @@ $grey2: #353535;
     flex-direction: row;
 }
 
+@mixin animationDishies {
+    opacity: 0;
+    animation: apparition 1s ease forwards;
+    @keyframes apparition {
+        0% {
+            opacity: 0;
+        } 
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
 * {
     margin: 0;
     padding: 0;

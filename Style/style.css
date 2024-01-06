@@ -68,7 +68,6 @@ header .explore button {
   margin-top: 10px;
   color: white;
   height: 50px;
-  width: 218px;
   border-radius: 25px;
   border: none;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -83,6 +82,9 @@ header .explore button:hover {
   cursor: pointer;
   -webkit-filter: brightness(1.13);
           filter: brightness(1.13);
+}
+header .explore button {
+  width: 218px;
 }
 
 .functioning {
@@ -525,10 +527,48 @@ footer .footer-container .links .legal-links {
   color: #353535;
 }
 
-.main-image {
+.main-image1 {
   width: 100%;
   min-height: 275px;
   background: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover;
+}
+@media (min-width: 769px) {
+  .main-image1 {
+    min-height: 400px;
+  }
+}
+
+.main-image2 {
+  width: 100%;
+  min-height: 275px;
+  background: url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center/cover;
+}
+@media (min-width: 769px) {
+  .main-image2 {
+    min-height: 400px;
+  }
+}
+
+.main-image3 {
+  width: 100%;
+  min-height: 275px;
+  background: url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) center/cover;
+}
+@media (min-width: 769px) {
+  .main-image3 {
+    min-height: 400px;
+  }
+}
+
+.main-image4 {
+  width: 100%;
+  min-height: 275px;
+  background: url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) center/cover;
+}
+@media (min-width: 769px) {
+  .main-image4 {
+    min-height: 400px;
+  }
 }
 
 .main-recipe-container {
@@ -543,8 +583,19 @@ footer .footer-container .links .legal-links {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (min-width: 769px) {
+  .main-recipe-container {
+    width: 80%;
+    margin: -40px auto 0 auto;
+  }
+}
 .main-recipe-container .under-main-recipe-container {
   width: 90%;
+}
+@media (min-width: 769px) {
+  .main-recipe-container .under-main-recipe-container {
+    width: 60%;
+  }
 }
 .main-recipe-container .under-main-recipe-container .main-title {
   padding-top: 30px;
@@ -595,6 +646,96 @@ footer .footer-container .links .legal-links {
   background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.main-recipe-container .under-main-recipe-container .anim1 {
+  opacity: 0;
+  -webkit-animation: apparition 1s ease forwards;
+          animation: apparition 1s ease forwards;
+}
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main-recipe-container .under-main-recipe-container .anim2 {
+  opacity: 0;
+  -webkit-animation: apparition 1s ease forwards;
+          animation: apparition 1s ease forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main-recipe-container .under-main-recipe-container .anim3 {
+  opacity: 0;
+  -webkit-animation: apparition 1s ease forwards;
+          animation: apparition 1s ease forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main-recipe-container .under-main-recipe-container .anim4 {
+  opacity: 0;
+  -webkit-animation: apparition 1s ease forwards;
+          animation: apparition 1s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main-recipe-container .under-main-recipe-container .recipe {
+  margin-top: 40px;
+  opacity: 0;
+  -webkit-animation: apparition 1s ease forwards;
+          animation: apparition 1s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main-recipe-container .under-main-recipe-container .recipe:nth-child(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.main-recipe-container .under-main-recipe-container .recipe:nth-child(3) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 .main-recipe-container .under-main-recipe-container .recipe h2 {
   font-size: 16px;
@@ -655,10 +796,11 @@ footer .footer-container .links .legal-links {
 .main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .label-recipe .dish {
   min-width: 100px;
 }
-.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .label-recipe .dish p {
+.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .label-recipe .dish span {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: block;
 }
 .main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .label-recipe .dish .main-text {
   font-weight: 600;
@@ -673,9 +815,10 @@ footer .footer-container .links .legal-links {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
-.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .label-recipe .price p {
+.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .label-recipe .price span {
   font-weight: bold;
   font-size: 15px;
+  display: block;
 }
 .main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .label-recipe .dish-overley {
   position: absolute;
@@ -703,4 +846,53 @@ footer .footer-container .links .legal-links {
   color: white;
   -webkit-transition: 0.1s ease;
   transition: 0.1s ease;
+}
+.main-recipe-container .under-main-recipe-container .commande {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-recipe-container .under-main-recipe-container .commande button {
+  margin-top: 10px;
+  color: white;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  margin-bottom: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.main-recipe-container .under-main-recipe-container .commande button:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(1.13);
+          filter: brightness(1.13);
+}
+.main-recipe-container .under-main-recipe-container .commande button {
+  width: 186px;
+  opacity: 0;
+  -webkit-animation: apparition 1s ease forwards;
+          animation: apparition 1s ease forwards;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
