@@ -543,48 +543,52 @@ footer .footer-container .links .legal-links {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.main-recipe-container .under-main-recupe-container {
+.main-recipe-container .under-main-recipe-container {
   width: 90%;
 }
-.main-recipe-container .under-main-recupe-container .main-title {
+.main-recipe-container .under-main-recipe-container .main-title {
   padding-top: 30px;
   padding-bottom: 40px;
+  min-width: 100px;
   position: relative;
 }
-.main-recipe-container .under-main-recupe-container .main-title h1 {
+.main-recipe-container .under-main-recipe-container .main-title h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.main-recipe-container .under-main-recupe-container .main-title .fav-recipe {
+.main-recipe-container .under-main-recipe-container .main-title .fav-recipe {
   position: absolute;
   bottom: 30px;
   right: 10px;
   font-size: 22px;
 }
-.main-recipe-container .under-main-recupe-container .main-title .fav-recipe .checkbox-fav {
+.main-recipe-container .under-main-recipe-container .main-title .fav-recipe .checkbox-fav {
   display: none;
 }
-.main-recipe-container .under-main-recupe-container .main-title .fav-recipe .checkbox-fav + label {
+.main-recipe-container .under-main-recipe-container .main-title .fav-recipe .checkbox-fav + label {
   position: relative;
 }
-.main-recipe-container .under-main-recupe-container .main-title .fav-recipe .checkbox-fav + label .solid-heart {
+.main-recipe-container .under-main-recipe-container .main-title .fav-recipe .checkbox-fav + label .solid-heart {
   position: absolute;
   bottom: 17px;
   right: 8px;
 }
-.main-recipe-container .under-main-recupe-container .main-title .fav-recipe .checkbox-fav + label .regular-heart {
+.main-recipe-container .under-main-recipe-container .main-title .fav-recipe .checkbox-fav + label .regular-heart {
   position: absolute;
   bottom: 17px;
   right: 8px;
 }
-.main-recipe-container .under-main-recupe-container .main-title .fav-recipe .checkbox-fav:checked + label .solid-heart {
+.main-recipe-container .under-main-recipe-container .main-title .fav-recipe .checkbox-fav:checked + label .solid-heart {
   display: block;
 }
-.main-recipe-container .under-main-recupe-container .main-title .fav-recipe .checkbox-fav:checked + label .regular-heart {
+.main-recipe-container .under-main-recipe-container .main-title .fav-recipe .checkbox-fav:checked + label .regular-heart {
   display: none;
 }
-.main-recipe-container .under-main-recupe-container .main-title .fav-recipe label .solid-heart {
+.main-recipe-container .under-main-recipe-container .main-title .fav-recipe label .solid-heart {
   display: none;
   background: #9356DC;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
@@ -592,11 +596,11 @@ footer .footer-container .links .legal-links {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.main-recipe-container .under-main-recupe-container .recipe h2 {
+.main-recipe-container .under-main-recipe-container .recipe h2 {
   font-size: 16px;
   font-weight: normal;
 }
-.main-recipe-container .under-main-recupe-container .recipe h2::after {
+.main-recipe-container .under-main-recipe-container .recipe h2::after {
   content: "";
   display: block;
   width: 45px;
@@ -604,7 +608,7 @@ footer .footer-container .links .legal-links {
   margin-top: 5px;
   background-color: #99E2D0;
 }
-.main-recipe-container .under-main-recupe-container .recipe .recipe-checkbox {
+.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox {
   margin-top: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -615,20 +619,20 @@ footer .footer-container .links .legal-links {
           flex-direction: row;
   width: 100%;
 }
-.main-recipe-container .under-main-recupe-container .recipe .recipe-checkbox .checkbox-recipe {
+.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .checkbox-recipe {
   display: none;
 }
-.main-recipe-container .under-main-recupe-container .recipe .recipe-checkbox .checkbox-recipe:checked + label .dish-overley {
+.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .checkbox-recipe:checked + label .dish-overley {
   width: 69px;
   visibility: visible;
 }
-.main-recipe-container .under-main-recupe-container .recipe .recipe-checkbox .checkbox-recipe:checked + label .dish-overley i {
+.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .checkbox-recipe:checked + label .dish-overley i {
   font-size: 20px;
 }
-.main-recipe-container .under-main-recupe-container .recipe .recipe-checkbox .checkbox-recipe:checked + label .price {
+.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .checkbox-recipe:checked + label .price {
   margin-right: 60px;
 }
-.main-recipe-container .under-main-recupe-container .recipe .recipe-checkbox .label-recipe {
+.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .label-recipe {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -648,32 +652,32 @@ footer .footer-container .links .legal-links {
   padding-left: 10px;
   overflow: hidden;
 }
-.main-recipe-container .under-main-recupe-container .recipe .recipe-checkbox .label-recipe .dish {
+.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .label-recipe .dish {
   min-width: 100px;
 }
-.main-recipe-container .under-main-recupe-container .recipe .recipe-checkbox .label-recipe .dish p {
+.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .label-recipe .dish p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.main-recipe-container .under-main-recupe-container .recipe .recipe-checkbox .label-recipe .dish .main-text {
+.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .label-recipe .dish .main-text {
   font-weight: 600;
   font-size: 18px;
 }
-.main-recipe-container .under-main-recupe-container .recipe .recipe-checkbox .label-recipe .dish .second-text {
+.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .label-recipe .dish .second-text {
   font-size: 15px;
 }
-.main-recipe-container .under-main-recupe-container .recipe .recipe-checkbox .label-recipe .price {
+.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .label-recipe .price {
   padding-right: 15px;
   padding-top: 23px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
-.main-recipe-container .under-main-recupe-container .recipe .recipe-checkbox .label-recipe .price p {
+.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .label-recipe .price p {
   font-weight: bold;
   font-size: 15px;
 }
-.main-recipe-container .under-main-recupe-container .recipe .recipe-checkbox .label-recipe .dish-overley {
+.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .label-recipe .dish-overley {
   position: absolute;
   right: 0;
   visibility: hidden;
@@ -694,7 +698,7 @@ footer .footer-container .links .legal-links {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
-.main-recipe-container .under-main-recupe-container .recipe .recipe-checkbox .label-recipe .dish-overley i {
+.main-recipe-container .under-main-recipe-container .recipe .recipe-checkbox .label-recipe .dish-overley i {
   font-size: 0;
   color: white;
   -webkit-transition: 0.1s ease;
