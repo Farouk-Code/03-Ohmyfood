@@ -647,10 +647,13 @@ footer .footer-container .links .legal-links {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.main-recipe-container .under-main-recipe-container .anim1 {
+.main-recipe-container .under-main-recipe-container .recipe {
+  margin-top: 40px;
   opacity: 0;
   -webkit-animation: apparition 1s ease forwards;
           animation: apparition 1s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 @-webkit-keyframes apparition {
   0% {
@@ -659,67 +662,6 @@ footer .footer-container .links .legal-links {
   100% {
     opacity: 1;
   }
-}
-@keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.main-recipe-container .under-main-recipe-container .anim2 {
-  opacity: 0;
-  -webkit-animation: apparition 1s ease forwards;
-          animation: apparition 1s ease forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-@keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.main-recipe-container .under-main-recipe-container .anim3 {
-  opacity: 0;
-  -webkit-animation: apparition 1s ease forwards;
-          animation: apparition 1s ease forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-@keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.main-recipe-container .under-main-recipe-container .anim4 {
-  opacity: 0;
-  -webkit-animation: apparition 1s ease forwards;
-          animation: apparition 1s ease forwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-@keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.main-recipe-container .under-main-recipe-container .recipe {
-  margin-top: 40px;
-  opacity: 0;
-  -webkit-animation: apparition 1s ease forwards;
-          animation: apparition 1s ease forwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
 }
 @keyframes apparition {
   0% {

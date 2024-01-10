@@ -80,24 +80,24 @@
            } 
         }
 
-        .anim1  {
-            @include animationDishies;
-        }
+        // .anim1  {
+        //     @include animationDishies;
+        // }
 
-        .anim2 {
-            @include animationDishies;
-            animation-delay: 1s;
-        }
+        // .anim2 {
+        //     @include animationDishies;
+        //     animation-delay: 1s;
+        // }
 
-        .anim3 {
-            @include animationDishies;
-            animation-delay: 2s;
-        }
+        // .anim3 {
+        //     @include animationDishies;
+        //     animation-delay: 2s;
+        // }
 
-        .anim4 {
-            @include animationDishies;
-            animation-delay: 3s;
-        }
+        // .anim4 {
+        //     @include animationDishies;
+        //     animation-delay: 3s;
+        // }
 
         .recipe {
             margin-top: 40px;
